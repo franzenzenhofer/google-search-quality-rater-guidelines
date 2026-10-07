@@ -29,7 +29,7 @@ nav.toc li { margin: 4px 0; }
 nav.toc a { text-decoration: none; color: var(--fg); }
 nav.toc a:hover { color: var(--accent); text-decoration: underline; }
 nav.toc .l1 > a { font-weight: 700; color: var(--head); }
-main { padding: 24px 40px 80px; min-width: 0; }
+main { padding: 24px 40px 80px; min-width: 0; overflow-wrap: anywhere; }
 header.doc { border-bottom: 1px solid var(--line); margin-bottom: 24px; padding-bottom: 16px; }
 header.doc h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; color: var(--head); }
 .notice { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; font: 16px/1.5 system-ui, sans-serif; }
