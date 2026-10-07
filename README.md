@@ -5,7 +5,7 @@ An **unofficial mirror** of Google's *Search Quality Evaluator Guidelines* (the 
 - **Official source (always cite this):** https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf
 - **Where Google links it:** [Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content#:~:text=Rater%20data%20is%20not%20used%20directly%20in%20our%20ranking%20algorithms) on Google Search Central, which also explains that "Rater data is not used directly in our ranking algorithms."
 - **Version mirrored:** 2025-09-11 (the date printed on page 1 of the PDF, "September 11, 2025"; see [`VERSION`](VERSION))
-- **Readable page:** https://franzenzenhofer.github.io/google-search-quality-rater-guidelines/
+- **Readable page (GitHub Pages):** https://qrg.franzai.com/
 
 ## Copyright and license
 

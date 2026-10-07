@@ -16,7 +16,7 @@ How to use:
 - [markdown/qrg.md](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/qrg.md): complete document as Markdown, headings mirror the numbering (# part, ## N.0, ### N.N, #### N.N.N)
 - [text/qrg.txt](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/text/qrg.txt): complete document as plain text
 - [json/qrg.json](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/json/qrg.json): sections with page ranges and text
-- [html/index.html](https://franzenzenhofer.github.io/google-search-quality-rater-guidelines/): one readable page with table of contents (GitHub Pages)
+- [html/index.html](https://qrg.franzai.com/): one readable page with table of contents (GitHub Pages)
 - [pdf/searchqualityevaluatorguidelines.pdf](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/pdf/searchqualityevaluatorguidelines.pdf): unchanged copy of the official PDF
 
 ## Sections (markdown/sections/, one file per part and chapter, with front matter: title, number, level, pages, source)

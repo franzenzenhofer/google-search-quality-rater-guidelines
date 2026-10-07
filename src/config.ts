@@ -3,10 +3,8 @@ import path from 'node:path';
 
 export const SOURCE_URL =
   'https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf';
-export const GOOGLE_REFERENCE_PAGE =
-  'https://developers.google.com/search/docs/fundamentals/creating-helpful-content';
 export const REPO_URL = 'https://github.com/franzenzenhofer/google-search-quality-rater-guidelines';
-export const PAGES_URL = 'https://franzenzenhofer.github.io/google-search-quality-rater-guidelines/';
+export const PAGES_URL = 'https://qrg.franzai.com/';
 
 export const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
