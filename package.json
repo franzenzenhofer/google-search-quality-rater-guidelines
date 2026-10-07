@@ -1,0 +1,36 @@
+{
+  "name": "google-search-quality-rater-guidelines",
+  "version": "1.0.0",
+  "description": "Unofficial machine- and human-friendly mirror of Google's Search Quality Rater Guidelines (Markdown, text, JSON, HTML) with a converter and weekly sync.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Franz Enzenhofer",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "generate": "tsx src/cli/generate.ts",
+    "sync": "tsx src/cli/sync.ts",
+    "check-generated": "npm run generate && git status --porcelain && test -z \"$(git status --porcelain)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franzenzenhofer/google-search-quality-rater-guidelines.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.4.299"
+  }
+}

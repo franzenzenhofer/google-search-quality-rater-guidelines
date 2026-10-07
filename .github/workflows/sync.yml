@@ -1,0 +1,48 @@
+name: Weekly sync
+
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Download the official PDF; archive and regenerate if it changed
+        run: npm run sync
+      - name: Gates on the result
+        run: npm run typecheck && npm run lint && npm run test && npm run build
+      - id: commit
+        name: Commit when the guideline changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Guideline unchanged."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          version="$(head -n 1 VERSION)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update guideline to version ${version}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  pages:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml

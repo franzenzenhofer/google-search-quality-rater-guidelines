@@ -1,0 +1,73 @@
+# Google Search Quality Rater Guidelines (unofficial machine-readable mirror)
+
+> Google's Search Quality Evaluator Guidelines ("General Guidelines", the human quality rater guideline), version 2025-09-11, converted from the official PDF into Markdown, plain text, JSON and HTML so agents can read, grep and cite it. The text is (c) Google LLC; this mirror is not affiliated with or endorsed by Google. Official PDF: https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf
+
+Version facts: version date 2025-09-11, 182 PDF pages, sha256 46aa9ea1fd004a09d68ececd7acdb18ec505061f52598fa69a856dfea94a6a06. The file VERSION holds these three values (date, source URL, sha256), one per line.
+
+How to use:
+- Search: grep markdown/sections/*.md or text/qrg.txt. Every PDF page starts with the marker `<!-- page N -->` (same format in Markdown and text), so the nearest marker above a match is the page to cite.
+- Structure: json/qrg.json has one entry per heading (158 entries; matches the printed table of contents): id, number, title, level, pageStart, pageEnd, pdfUrl, file, text. `text` is the section's own text up to the next heading.
+- Cite: always link the official PDF with a page fragment, e.g. https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf#page=26 for "3.4 Experience, Expertise, Authoritativeness, and Trust (E-E-A-T)". Quote verbatim from the text files; do not cite this mirror as the source.
+- Tables are GitHub Markdown tables in the Markdown files (cell paragraphs joined by <br>), and "Header: cell" lines in the text file.
+- Screenshots and example images of the PDF are not included; links to them (guidelines.raterhub.com/images/...) are kept in the Markdown and HTML files.
+
+## Full text
+
+- [markdown/qrg.md](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/qrg.md): complete document as Markdown, headings mirror the numbering (# part, ## N.0, ### N.N, #### N.N.N)
+- [text/qrg.txt](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/text/qrg.txt): complete document as plain text
+- [json/qrg.json](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/json/qrg.json): sections with page ranges and text
+- [html/index.html](https://franzenzenhofer.github.io/google-search-quality-rater-guidelines/): one readable page with table of contents (GitHub Pages)
+- [pdf/searchqualityevaluatorguidelines.pdf](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/pdf/searchqualityevaluatorguidelines.pdf): unchanged copy of the official PDF
+
+## Sections (markdown/sections/, one file per part and chapter, with front matter: title, number, level, pages, source)
+
+- [General Guidelines Overview](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/01-general-guidelines-overview.md): PDF pages 5-5
+- [Introduction to Search Quality Rating](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/02-introduction-to-search-quality-rating.md): PDF pages 6-6
+- [0.0 The Search Experience](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/03-0-0-the-search-experience.md): PDF pages 6-6
+- [0.1 The Purpose of Search Quality Rating](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/04-0-1-the-purpose-of-search-quality-rating.md): PDF pages 6-6
+- [0.2 Raters Must Represent People in their Rating Locale](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/05-0-2-raters-must-represent-people-in-their-rating-locale.md): PDF pages 7-7
+- [0.3 Browser Requirements](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/06-0-3-browser-requirements.md): PDF pages 7-7
+- [0.4 Ad Blocking Extensions](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/07-0-4-ad-blocking-extensions.md): PDF pages 7-7
+- [0.5 Internet Safety Information](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/08-0-5-internet-safety-information.md): PDF pages 7-7
+- [0.6 The Role of Examples in these Guidelines](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/09-0-6-the-role-of-examples-in-these-guidelines.md): PDF pages 8-8
+- [Part 1: Page Quality Rating Guideline](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/10-part-1-page-quality-rating-guideline.md): PDF pages 9-9
+- [1.0 Introduction to Page Quality Rating](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/11-1-0-introduction-to-page-quality-rating.md): PDF pages 9-9
+- [2.0 Understanding Webpages and Websites](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/12-2-0-understanding-webpages-and-websites.md): PDF pages 9-18
+- [3.0 Overall Page Quality Rating](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/13-3-0-overall-page-quality-rating.md): PDF pages 19-28
+- [4.0 Lowest Quality Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/14-4-0-lowest-quality-pages.md): PDF pages 29-58
+- [5.0 Low Quality Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/15-5-0-low-quality-pages.md): PDF pages 59-67
+- [6.0 Medium Quality Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/16-6-0-medium-quality-pages.md): PDF pages 68-70
+- [7.0 High Quality Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/17-7-0-high-quality-pages.md): PDF pages 71-76
+- [8.0 Highest Quality Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/18-8-0-highest-quality-pages.md): PDF pages 77-84
+- [9.0 Page Quality Criteria for Specific Types of Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/19-9-0-page-quality-criteria-for-specific-types-of-pages.md): PDF pages 85-90
+- [10.0 Page Quality Rating Tasks](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/20-10-0-page-quality-rating-tasks.md): PDF pages 91-91
+- [11.0 Page Quality Rating FAQs](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/21-11-0-page-quality-rating-faqs.md): PDF pages 92-93
+- [Part 2: Understanding Search User Needs](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/22-part-2-understanding-search-user-needs.md): PDF pages 94-94
+- [12.0 Understanding Search Users, Queries, and Results](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/23-12-0-understanding-search-users-queries-and-results.md): PDF pages 94-112
+- [Part 3: Needs Met Rating Guideline](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/24-part-3-needs-met-rating-guideline.md): PDF pages 113-113
+- [13.0 Rating Using the Needs Met Scale](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/25-13-0-rating-using-the-needs-met-scale.md): PDF pages 113-141
+- [14.0 The Relationship between Page Quality and Needs Met](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/26-14-0-the-relationship-between-page-quality-and-needs-met.md): PDF pages 142-143
+- [15.0 Rating Porn, Foreign Language, and Did Not Load Results](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/27-15-0-rating-porn-foreign-language-and-did-not-load-results.md): PDF pages 144-151
+- [16.0 Many Types of Helpful Results](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/28-16-0-many-types-of-helpful-results.md): PDF pages 152-154
+- [17.0 Specificity of Queries and Landing Pages](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/29-17-0-specificity-of-queries-and-landing-pages.md): PDF pages 154-157
+- [18.0 Needs Met Rating and Freshness](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/30-18-0-needs-met-rating-and-freshness.md): PDF pages 158-160
+- [19.0 Misspelled and Mistyped Queries and Results](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/31-19-0-misspelled-and-mistyped-queries-and-results.md): PDF pages 160-161
+- [20.0 Non-Fully Meets Results for URL Queries](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/32-20-0-non-fully-meets-results-for-url-queries.md): PDF pages 161-162
+- [21.0 Product Queries: Importance of Browsing and Researching](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/33-21-0-product-queries-importance-of-browsing-and-researching.md): PDF pages 163-164
+- [22.0 Rating Visit-in-Person Intent Queries](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/34-22-0-rating-visit-in-person-intent-queries.md): PDF pages 164-166
+- [23.0 Rating English Language Results in Non-English Locales](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/35-23-0-rating-english-language-results-in-non-english-locales.md): PDF pages 167-172
+- [24.0 Rating Dictionary and Encyclopedia Results for Different Queries](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/36-24-0-rating-dictionary-and-encyclopedia-results-for.md): PDF pages 172-174
+- [Appendix 1: Using the Evaluation Platform](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/37-appendix-1-using-the-evaluation-platform.md): PDF pages 175-175
+- [25.0 Overview](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/38-25-0-overview.md): PDF pages 175-175
+- [26.0 Acquiring Tasks](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/39-26-0-acquiring-tasks.md): PDF pages 175-175
+- [27.0 Rating Tasks Using the Rating Interface](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/40-27-0-rating-tasks-using-the-rating-interface.md): PDF pages 175-176
+- [28.0 Releasing Tasks](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/41-28-0-releasing-tasks.md): PDF pages 176-177
+- [29.0 Understanding the User Location on the Task Page](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/42-29-0-understanding-the-user-location-on-the-task-page.md): PDF pages 178-178
+- [30.0 Reporting Duplicate Results in Tasks](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/43-30-0-reporting-duplicate-results-in-tasks.md): PDF pages 178-180
+- [31.0 Simplified Needs Met Tasks](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/44-31-0-simplified-needs-met-tasks.md): PDF pages 181-181
+- [Appendix 2: Guideline Change Log](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/markdown/sections/45-appendix-2-guideline-change-log.md): PDF pages 182-182
+
+## Optional
+
+- [README.md](https://raw.githubusercontent.com/franzenzenhofer/google-search-quality-rater-guidelines/main/README.md): what this is, how it is generated, how to cite
+- [versions/](https://github.com/franzenzenhofer/google-search-quality-rater-guidelines/tree/main/versions): earlier versions of the guideline, kept when Google publishes a new one
