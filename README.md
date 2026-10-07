@@ -64,7 +64,7 @@ To find the page of a passage, take the nearest `<!-- page N -->` marker above i
 
 ## Development
 
-Node 20 or newer.
+Node 22 or newer (pdf.js needs `Promise.withResolvers`).
 
 ```
 npm ci
